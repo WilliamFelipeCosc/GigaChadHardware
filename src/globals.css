@@ -12,6 +12,10 @@ body {
 header {
   background-color: #11101051;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 ul {
@@ -21,8 +25,11 @@ ul {
   gap: 16px;
 }
 
+main {
+  padding-top: 60px;
+}
 
 a {
   text-decoration: none;
-  color: #353535;
+  color: #f7f6f6de;
 }
