@@ -1,97 +1,97 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-input{
-    display: block;
-    padding: 8px;
-    margin: 10px;
-    width: 85%;
-    font-size: 12px;
-    border: none;
-    border-radius: 4px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
-    outline: none;
+input {
+  display: block;
+  padding: 8px;
+  margin: 10px;
+  width: 85%;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
 }
 
-p{
-    text-align: center;
-    font-size: 10px;
+p {
+  text-align: center;
+  font-size: 10px;
 }
 
-.grad{
-    background-image: linear-gradient(to bottom right, rgb(28, 87, 165), rgb(212, 69, 210));
+.grad {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(28, 87, 165),
+    rgb(212, 69, 210)
+  );
 }
 
-h1{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    color: rgb(0, 0, 0);    
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    text-align: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  width: 100%;
 }
 
 button {
-    background-color: #65ab5f;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    font-size:12px;
-    margin: auto 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    width: 50%;
-    padding: 8px;
-    margin: 12px 0 8px;
+  background-color: #65ab5f;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 12px;
+  margin: auto 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 50%;
+  padding: 8px;
+  margin: 12px 0 8px;
 }
 
 button:hover {
-    background-color: #6fc76f;
+  background-color: #6fc76f;
 }
 
 button:active {
-    background-color: #376c37;
+  background-color: #376c37;
 }
 
-#voltar{
-    padding: 5px;
-    color: black;
-    font-size: 12px;
-    display: block;
-    text-decoration: none;
-}
-
-.screen {
-    height: 100vh;
+#voltar {
+  padding: 5px;
+  color: black;
+  font-size: 12px;
+  display: block;
+  text-decoration: none;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-section{
-    background-color: rgb(255, 255, 255);
-    width:50%;
-    padding: 24px;
-    margin: auto;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
+section {
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  padding: 24px;
+  margin: auto;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
