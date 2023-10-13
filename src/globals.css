@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  --primary: #1e66d9;
+  --primary-light: #4488f5;
+  --primary-dark: #1a4486;
+
+  --gray: #313842;
+  --black: #1b1c1e;
 }
 
 body {
@@ -11,17 +18,25 @@ body {
 
 .screen {
   height: 100vh;
-  padding-top: 60px;
+  padding-top: 72px;
+}
+
+.gradient {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(28, 87, 165),
+    rgb(162, 56, 207)
+  );
 }
 
 header {
-  background-color: #11101051;
+  background-color: rgba(44, 47, 51, 0.5);
   padding: 20px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(8px);
 }
 
 ul {
@@ -31,7 +46,108 @@ ul {
   gap: 16px;
 }
 
-a {
+ul > li {
+  font-size: 14px;
+}
+
+ul > li.active {
+  color: var(--primary-light);
+  padding: 8px;
+}
+
+ul > li > a {
   text-decoration: none;
   color: #f7f6f6de;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-dark);
+  border-radius: 8px;
+  padding: 8px;
+  display: block;
+  font-size: 12px;
+  transition: all 200ms ease-in;
+}
+
+a:hover {
+  background-color: rgba(30, 102, 217, 0.3);
+}
+
+a:active {
+  background-color: rgba(30, 102, 217, 0.7);
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 12px;
+  margin: auto 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 50%;
+  padding: 8px;
+  margin: 12px 0 8px;
+  transition: all 200ms ease-in;
+}
+
+button:hover {
+  background-color: var(--primary-light);
+}
+
+button:active {
+  background-color: var(--primary-dark);
+}
+
+input {
+  display: block;
+  padding: 8px 12px;
+  margin: 10px;
+  width: 85%;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+h1 {
+  font-size: 32px;
+  color: var(--black);
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--black);
+}
+
+p {
+  font-size: 12px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.shadow {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
 }
