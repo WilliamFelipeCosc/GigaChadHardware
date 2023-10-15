@@ -19,24 +19,18 @@ table {
   padding: 8px;
   border-radius: 8px;
 }
-table td {
-  padding: 8px;
-  border: 1px solid var(--black);
+
+table thead {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid white;
 }
 
-table th {
+table thead th {
   padding: 8px;
   border: 1px solid white;
   background-color: var(--gray);
   color: white;
-}
-
-hr {
-  width: 100%;
-}
-
-table tr:nth-child(even) {
-  background-color: #dedede;
 }
 
 table thead th:first-child {
@@ -47,15 +41,20 @@ table thead th:last-child {
   border-top-right-radius: 8px;
 }
 
-table thead tr {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border: black 1px solid;
+table tr td:nth-child(odd) {
+  background-color: #bfc4d0cd;
 }
 
-table thead {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+table tbody tr {
+  border-top: 1px solid var(--black);
+}
+
+table td {
+  padding: 8px;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
 }
 
 table tbody tr:last-child td:last-child {
