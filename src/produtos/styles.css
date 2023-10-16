@@ -1,34 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
-@media (max-width: 600px) {
-  .content {
-    padding-top: 5%;
-  }
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-  .item-box {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-  .item-box img {
-    max-width: 100%;
-    height: auto;
-  }
-  .product-title {
-    font-size: smaller;
-  }
-  .buy-button {
-    font-size: smaller;
-  }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -102,5 +73,34 @@
 .footer {
   background-color: #fff;
   color: var(--black);
-  padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding-top: 80px;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+  .item-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .item-box img {
+    max-width: 100%;
+    height: auto;
+  }
+  .product-title {
+    font-size: smaller;
+  }
+  .buy-button {
+    font-size: smaller;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
