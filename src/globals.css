@@ -24,7 +24,7 @@ body {
   background-image: linear-gradient(
     to bottom right,
     rgb(28, 87, 165),
-    rgb(162, 56, 207)
+    rgb(56, 13, 74)
   );
 }
 
@@ -47,7 +47,7 @@ ul {
 }
 
 ul > li {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 ul > li.active {
@@ -58,7 +58,7 @@ ul > li.active {
 ul > li > a {
   text-decoration: none;
   color: #f7f6f6de;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 a {
@@ -79,7 +79,7 @@ a:active {
   background-color: rgba(30, 102, 217, 0.7);
 }
 
-button {
+.button {
   background-color: var(--primary);
   color: white;
   border: none;
@@ -92,13 +92,15 @@ button {
   padding: 8px;
   margin: 12px 0 8px;
   transition: all 200ms ease-in;
+  display: block;
+  text-align: center;
 }
 
-button:hover {
+.button:hover {
   background-color: var(--primary-light);
 }
 
-button:active {
+.button:active {
   background-color: var(--primary-dark);
 }
 
@@ -120,12 +122,12 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
   color: var(--black);
 }
 
 p {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .flex {
@@ -174,4 +176,22 @@ p {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
   backdrop-filter: blur(6px);
+}
+
+footer {
+  padding: 24px;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  header ul > li {
+    font-size: 16px;
+  }
+
+  header ul > li > a {
+    font-size: 16px;
+  }
 }

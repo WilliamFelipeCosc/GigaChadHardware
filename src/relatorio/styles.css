@@ -1,8 +1,8 @@
 .container {
   gap: 32px;
   justify-content: center;
-  padding: 32px;
-  width: fit-content;
+  padding: 16px;
+  width: 100%;
   margin: 0 auto;
   background-color: white;
   border-radius: 8px;
@@ -10,7 +10,7 @@
 }
 
 main {
-  height: 100%;
+  height: calc(100% - 66px);
   justify-content: center;
 }
 
@@ -18,25 +18,21 @@ table {
   border-collapse: collapse;
   padding: 8px;
   border-radius: 8px;
-}
-table td {
-  padding: 8px;
-  border: 1px solid var(--black);
+  font-size: 12px;
+  width: 100%;
 }
 
-table th {
+table thead {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border: 1px solid white;
+}
+
+table thead th {
   padding: 8px;
   border: 1px solid white;
   background-color: var(--gray);
   color: white;
-}
-
-hr {
-  width: 100%;
-}
-
-table tr:nth-child(even) {
-  background-color: #dedede;
 }
 
 table thead th:first-child {
@@ -47,15 +43,24 @@ table thead th:last-child {
   border-top-right-radius: 8px;
 }
 
-table thead tr {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border: black 1px solid;
+table tr td:nth-child(odd) {
+  background-color: #bfc4d0cd;
 }
 
-table thead {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+table tr td:nth-child(even) {
+  background-color: #e5f3f8cf;
+}
+
+table tbody tr {
+  border-top: 1px solid var(--black);
+}
+
+table td {
+  padding: 8px;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
 }
 
 table tbody tr:last-child td:last-child {
@@ -70,4 +75,16 @@ table tbody {
 table tbody tr:last-child {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: fit-content;
+    padding: 32px;
+  }
+
+  table {
+    font-size: 16px;
+    width: fit-content;
+  }
 }
