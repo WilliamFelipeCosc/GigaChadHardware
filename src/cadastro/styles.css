@@ -13,12 +13,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: calc(100% - 66px);
 }
 
 section {
   background-color: rgb(255, 255, 255);
-  width: 50%;
+  width: 100%;
   padding: 24px;
   margin: auto;
   border-radius: 6px;
@@ -30,4 +30,10 @@ section {
 
 section p {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    width: 50%;
+  }
 }

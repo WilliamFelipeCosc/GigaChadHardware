@@ -15,6 +15,7 @@
 .primary h1,
 .primary p {
   z-index: 10;
+  text-align: center;
 }
 
 .primary h1 {
@@ -54,10 +55,13 @@
 
 .card-container {
   gap: 12px;
+  width: 100%;
+  justify-content: center;
 }
 
 .card {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 200px;
   background-color: var(--white);
   border-radius: 8px;
@@ -80,6 +84,7 @@
   color: #fff;
   z-index: 10;
   text-align: center;
+  font-weight: 500;
 }
 
 .card > div {
@@ -111,8 +116,39 @@
   background-image: url(./images/fonte.jpg);
 }
 
-.secondary button {
+.secondary .button {
   width: fit-content;
   padding: 12px 16px;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+.tertiary {
+  width: 100%;
+  height: fit-content;
+  gap: 32px;
+  padding: 48px 24px;
+}
+
+.tertiary-title {
+  width: 100%;
+  height: fit-content;
+  gap: 12px;
+  text-align: center;
+}
+
+.tertiary .btn-container {
+  gap: 16px;
+}
+
+.tertiary .button {
+  width: fit-content;
+  padding: 12px 16px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-container {
+    width: 90%;
+    justify-content: space-between;
+  }
 }
