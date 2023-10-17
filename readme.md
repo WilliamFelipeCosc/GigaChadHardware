@@ -2,4 +2,12 @@
 
 Projeto Front End
 
-## Em contrução
+## Alunos
+
+-Leonardo Kenji Orikassa
+
+-Kaue Galon
+
+-Pedro Henrique Cagol
+
+-William Felipe Coscodai
