@@ -4,7 +4,7 @@ Projeto Front End
 
 ## Alunos
 
--Leonardo Kenji Orikassa
+-Leonardo Kenji Akiyama
 
 -Kaue Galon
 
